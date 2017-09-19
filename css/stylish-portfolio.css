@@ -299,7 +299,6 @@ footer {
 
 .table-txt {
     color: black;
-    font-size: 1em;
 }
 
 .money {
@@ -322,4 +321,13 @@ footer {
 
 .services-txt {
     font-size: 2em !important;
+}
+@media (max-device-width: 480px) {
+    .vertical-center >h1 {
+        font-size: 1.5em !important;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+    }
+
 }
