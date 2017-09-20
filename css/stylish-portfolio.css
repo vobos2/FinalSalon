@@ -329,7 +329,7 @@ footer {
     height: 150px;
     min-height: 100px;
     min-width: 160px;
-    overflow: auto;
+    overflow: hidden;
     font-size:1.1em;
 }
 
