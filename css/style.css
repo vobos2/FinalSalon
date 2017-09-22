@@ -6,10 +6,11 @@
 
 /* Global Styles */
 @font-face {
-    font-family:butler;
-    src: url('../fonts/Butler_and_ButlerStencil/');
+    font-family:Lobster, SansSerif;
 }
-
+* {
+    font-family: Lobster, SansSerif;
+}
 html,
 body {
     width: 100%;
@@ -17,21 +18,25 @@ body {
 }
 
 body {
-    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: Lobster, SansSerif;
+
 }
 
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    font-family: butler_stencilbold !important;
+    font-family: Lobster, SansSerif;
     font-weight:700;
 }
 
 .text-vertical-center h1 {
-    font-family: butler_stencilbold !important;
+    font-family: Lobster, SansSerif;
     margin-bottom:40% !important;
+    margin-left:5%;
+    margin-right:5%;
     font-weight: 700;
+    font-size:3.3em;
     margin: 0;
     padding: 0;
 }
@@ -76,7 +81,7 @@ body {
 }
 
 .body-header {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .light-stroked {
@@ -88,9 +93,8 @@ body {
 }
 
 .dark-text {
-    color: black !important;
-    font-size: 1.25em;
-    font-family: Hind, sans-serif;
+    color: #464646 !important;
+    font-size: 1.4em;
 }
 
 .btn-light:hover,
@@ -315,24 +319,32 @@ footer {
 }
 
 .money {
-    color: limegreen;
-    float: right;
-    font-size: .8em;
+    color: #28a428;
+    font-size: 1em;
 }
-
 .txt-faded {
     color: rgba(0, 0, 0, .7);
+    font-size:.8em;
 }
-
 .list-group-item {
-    text-align: left;
-    height: 150px;
+    height: 100px;
     min-height: 100px;
     min-width: 160px;
     overflow: hidden;
     font-size:1.1em;
-}
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
 
+}
+.disclaimer{
+    margin-left:3%;
+    font-size:1.5em;
+}
+.lobster {
+    font-family: Lobster, SansSerif;
+}
 .services-txt {
     font-size: 2em !important;
 }
@@ -341,10 +353,10 @@ footer {
         font-size:68px;
         font-weight:700;
         margin-bottom:0% !important;
-        font-family: butler_stencilbold !important;
+        font-family: Lobster, SansSerif;
     }
     .btn-book {
-        font-family: butler_stencilbold !important;
+        font-family: Lobster, SansSerif;
         font-size:104px !important;
     }
 }
@@ -353,11 +365,11 @@ footer {
     .text-vertical-center h1 {
         font-size:68px ;
         font-weight:700;
-        font-family: butler_stencilbold !important;
+        font-family: Lobster, SansSerif;
     }
     .btn-book{
         margin-top:40% !important;
-        font-family: butler_stencilbold !important;
+        font-family: Lobster, SansSerif;
         font-size:104px !important;
     }
 }
@@ -372,7 +384,7 @@ footer {
     }
     .btn-book{
         margin-top:40% !important;
-        font-family: butler_stencilbold !important;
+        font-family: Lobster, SansSerif;
         font-size:88px;
     }
 }
@@ -386,7 +398,7 @@ footer {
     }
     .btn-book{
         margin-top:30% !important;
-        font-family: butler_stencilbold !important;
+        font-family: Lobster, SansSerif;
         font-size:68px !important;
     }
 }
