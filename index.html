@@ -114,14 +114,49 @@
     </div>
     <!-- /.container -->
 </section>
+<br>
+<!-- Gallery -->
+<section id="slide-container">
+    <section id="gallery">
 
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="img/girl2.jpg">
+            <img class="mySlides" src="img/bg.jpg">
+            <img class="mySlides" src="img/darkLogo.png">
+            <div class="w3-center w3-display-bottommiddle" style="width:100%">
+                <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+                <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+            </div>
+        </div>
+        <script>
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 5000); // Change image every 5 seconds
+            }
+        </script>
+    </section>
+</section>
+<br>
 <!-- Services -->
 <section id="services" class="services main-bg text-white">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-12 mx-auto">
                 <h2 class="light-stroked lobster">Our Services</h2>
-                <hr class="small bg-dark">
+                <hr class="small bg-light">
                 <div class="row">
                     <div class="col-md-3">
                         <div class="service-item">
@@ -141,6 +176,11 @@
                                 </li>
                                 <li class="list-group-item table-txt"> Bang Trim
                                     <small class="money"><b>$15</b></small>
+
+                                </li>
+                                <li class="list-group-item table-txt">
+                                    Deep Conditioner Treatment
+                                    <small class="money"><b>$20-$50</b></small>
 
                                 </li>
 
@@ -167,6 +207,11 @@
                                 <li class="list-group-item table-txt">
                                     Deep Conditioner Treatment
                                     <small class="money"><b>$20-$50</b></small>
+
+                                </li>
+                                <li class="list-group-item table-txt">
+                                    Thermo Cut (hot scissors)
+                                    <small class="money"><b>$100</b></small>
 
                                 </li>
 
@@ -198,6 +243,11 @@
                                     <small class="money"><b>$10 per foil </b></small>
                                     <p class="txt-faded">5 foils or less</p>
                                 </li>
+                                <li class="list-group-item table-txt">
+                                    Hair Botox (frizz repair)
+                                    <small class="money"><b>$200-$250</b></small>
+
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -228,6 +278,11 @@
                                     <br>
                                     <small class="money"><b><b class="money"> Consultation</b></b></b></small>
                                 </li>
+                                <li class="list-group-item table-txt">
+                                    Deep Conditioner Treatment
+                                    <small class="money"><b>$20-$50</b></small>
+
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -240,7 +295,6 @@
     </div>
     <!-- /.container -->
 </section>
-
 <!-- Map -->
 <section id="contact" class="map">
     <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDzw76uNc7ZCKbWaEqJzr2wFnl0ZYvCRjc&q=American+Beauty+Salons,+111+John+St,+New+York,+NY+10038"

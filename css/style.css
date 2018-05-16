@@ -274,6 +274,36 @@ hr.small {
     margin: 10px;
 }
 
+/* Gallery */
+#slide-container{
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x:hidden;
+
+}
+.mySlides {
+    display:block; margin-left: auto; margin-right: auto;
+
+    height:100%;
+}
+
+
+@media (max-width: 768px) {
+    .mySlides {
+        height: 75%;
+    }
+    #slide-container{
+        height:75%;
+    }
+}
+
 /* Map */
 
 .map {
