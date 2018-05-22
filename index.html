@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Head -->
 <head>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106955457-1"></script>
@@ -9,7 +10,7 @@
 
         function gtag() {
             dataLayer.push(arguments)
-        };
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-106955457-1');
@@ -42,7 +43,9 @@
 
 </head>
 
+<!-- Body -->
 <body>
+
 <!-- Navigation -->
 <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
     <i class="fa fa-bars"></i>
@@ -68,11 +71,15 @@
             </a>
         </li>
         <li>
+        <a class="js-scroll-trigger" href="#gallery">
+            <div class="light">Gallery</div>
+        </a>
+        </li>
+        <li>
             <a class="js-scroll-trigger" href="#services">
                 <div class="light">Services</div>
             </a>
         </li>
-
         <li>
             <a class="js-scroll-trigger" href="#contact" onclick=$("#menu-close").click();>
                 <div class="light">Contact</div>
@@ -114,42 +121,19 @@
     </div>
     <!-- /.container -->
 </section>
-<br>
+
 <!-- Gallery -->
-<section id="slide-container">
-    <section id="gallery">
 
-        <div class="w3-content w3-display-container">
-            <img class="mySlides" src="img/girl2.jpg">
-            <img class="mySlides" src="img/bg.jpg">
-            <img class="mySlides" src="img/darkLogo.png">
-            <div class="w3-center w3-display-bottommiddle" style="width:100%">
-                <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
-                <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
-                <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
-                <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
-                <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
-            </div>
-        </div>
-        <script>
-            var slideIndex = 0;
-            carousel();
-
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > x.length) {slideIndex = 1}
-                x[slideIndex-1].style.display = "block";
-                setTimeout(carousel, 5000); // Change image every 5 seconds
-            }
-        </script>
-    </section>
+<section id="gallery">
+    <div id="pixlee_container"></div>
+    <script type="text/javascript">window.PixleeAsyncInit = function () {
+        Pixlee.init({apiKey: 'u4wYnKbp0FEWypKcCiJe'});
+        Pixlee.addSimpleWidget({widgetId: '4658'});
+    };</script>
+    <script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
+    <br>
 </section>
-<br>
+
 <!-- Services -->
 <section id="services" class="services main-bg text-white">
     <div class="container">
@@ -179,8 +163,8 @@
 
                                 </li>
                                 <li class="list-group-item table-txt">
-                                    Deep Conditioner Treatment
-                                    <small class="money"><b>$20-$50</b></small>
+                                    Thermo Cut (hot scissors)
+                                    <small class="money"><b>$100</b></small>
 
                                 </li>
 
@@ -210,8 +194,8 @@
 
                                 </li>
                                 <li class="list-group-item table-txt">
-                                    Thermo Cut (hot scissors)
-                                    <small class="money"><b>$100</b></small>
+                                    Updo
+                                    <small class="money"><b>$120/hour</b></small>
 
                                 </li>
 
@@ -238,16 +222,17 @@
                                     <small class="money"><b>$175-$225</b></small>
 
                                 </li>
-                                <li class="list-group-item table-txt">
-                                    Foils
-                                    <small class="money"><b>$10 per foil </b></small>
-                                    <p class="txt-faded">5 foils or less</p>
-                                </li>
+
                                 <li class="list-group-item table-txt">
                                     Hair Botox (frizz repair)
                                     <small class="money"><b>$200-$250</b></small>
 
                                 </li>
+                                <li class="list-group-item table-txt">
+                                    Balayage
+                                    <small class="money"><b>$250</b></small>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -257,31 +242,25 @@
                             <ul class="list-group">
                                 <li class="list-group-item table-txt">
                                     Gloss
-                                    <small class="money"><b>$60</b></small>
+                                    <small class="money"><b>$60-$80</b></small>
                                 </li>
 
                                 <li class="list-group-item table-txt">
-                                    Coloring (full)
-                                    <small class="money"><b>$120-$150</b></small>
                                     Coloring (roots)
                                     <small class="money"><b>$80</b></small>
+                                </li>
+                                <li class="list-group-item table-txt">
+                                    Coloring (full)
+                                    <small class="money"><b>$120-$150</b></small>
                                 </li>
                                 <li class="list-group-item table-txt">
                                     Keratin Treatments
                                     <small class="money"><b>$200-$300</b></small>
 
                                 </li>
-                                <li class="list-group-item table-txt"> Corrective Color
-                                    <br>
-                                    <small class="money"><b class="money"> Consultation</b></b></small>
-                                    Perms/Relaxers
-                                    <br>
-                                    <small class="money"><b><b class="money"> Consultation</b></b></b></small>
-                                </li>
                                 <li class="list-group-item table-txt">
-                                    Deep Conditioner Treatment
-                                    <small class="money"><b>$20-$50</b></small>
-
+                                    Perms/Relaxers
+                                    <small class="money"><b>Consultation</b></small>
                                 </li>
                             </ul>
                         </div>
@@ -295,6 +274,7 @@
     </div>
     <!-- /.container -->
 </section>
+
 <!-- Map -->
 <section id="contact" class="map">
     <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDzw76uNc7ZCKbWaEqJzr2wFnl0ZYvCRjc&q=American+Beauty+Salons,+111+John+St,+New+York,+NY+10038"
@@ -305,6 +285,18 @@
     </small>
 </section>
 
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/stylish-portfolio.js"></script>
+</body>
+
 <!-- Footer -->
 <footer>
     <div class="container">
@@ -313,7 +305,8 @@
                 <h4>
                     <strong class="main-red lobster">American Beauty Salons</strong>
                 </h4>
-                <a target="_blank" href="https://www.google.com/maps/dir/''/american+beauty+salons/@40.7077435,-74.075622,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89c25a17c119014d:0x6e69998a1c68a981!2m2!1d-74.0055821!2d40.7077647"
+                <a target="_blank"
+                   href="https://www.google.com/maps/dir/''/american+beauty+salons/@40.7077435,-74.075622,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89c25a17c119014d:0x6e69998a1c68a981!2m2!1d-74.0055821!2d40.7077647"
                    style="text-decoration:none"><p>
                     111 John St
                     <br>New York, NY 10038</p>
@@ -340,11 +333,6 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="https://twitter.com/home?status=I%20LOVE%20www.americanbeautysalons.net">
-                            <i class="fa fa-twitter fa-fw fa-3x"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
                         <a href="http://ab.simplybook.me/sheduler/manage" target="_blank">
                             <i class="fa fa-calendar fa-fw fa-3x"></i>
                         </a>
@@ -359,18 +347,5 @@
         <i class="fa fa-chevron-up fa-fw fa-1x"></i>
     </a>
 </footer>
-
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/popper/popper.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="js/stylish-portfolio.js"></script>
-
-</body>
 
 </html>
