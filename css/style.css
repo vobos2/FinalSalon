@@ -113,6 +113,13 @@ hr.small {
     max-width: 100px;
 }
 
+hr.supersmall {
+    width:20px;
+    color:black;
+    margin:5px auto 5px auto;
+    border:solid 1px;
+}
+
 /* Side Menu */
 
 #sidebar-wrapper {
@@ -360,11 +367,11 @@ footer {
     font-size:.8em;
 }
 .list-group-item {
-    height: 100px;
+    height: 130px;
     min-height: 100px;
     min-width: 160px;
     overflow: hidden;
-    font-size:1.1em;
+    font-size:1.15em;
     display: flex;
     justify-content:center;
     flex-direction:column;
