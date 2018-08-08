@@ -366,9 +366,10 @@ footer {
     color: rgba(0, 0, 0, .7);
     font-size:.8em;
 }
+/* Main Services Box */
 .list-group-item {
     height: 150px;
-    min-height: 150px;
+    min-height: 100px;
     min-width: 160px;
     overflow: hidden;
     font-size:1.15em;
