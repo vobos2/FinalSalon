@@ -116,6 +116,7 @@ hr.small {
 hr.supersmall {
     width:20px;
     color:black;
+    background-color:black;
     margin:5px auto 5px auto;
     border:solid 1px;
 }
