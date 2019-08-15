@@ -362,11 +362,11 @@ footer {
 
 .money {
     color: #28a428;
-    font-size: 1em;
+    font-size: .9em;
 }
 .txt-faded {
     color: rgba(0, 0, 0, .7);
-    font-size:.8em;
+    font-size:.75em;
 }
 
 .disclaimer{
