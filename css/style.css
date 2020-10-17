@@ -6,23 +6,39 @@
 
 /* Global Styles */
 @font-face {
-    font-family:Lobster, SansSerif;
+    font-family: Lobster, SansSerif;
 }
+
 * {
     font-family: Lobster, SansSerif;
 }
+
+html {
+    overflow-x: hidden
+}
+
 html,
 body {
     width: 100%;
     height: 100%;
+
 }
 
 body {
     font-family: Lobster, SansSerif;
 
 }
+
+#movingPopup * {
+    font-family: Arial !important;
+}
+
+#movingTitle {
+    font-size: 30px;
+}
+
 footer h4 {
-    font-size:2em;
+    font-size: 2em;
 }
 
 .text-vertical-center {
@@ -30,16 +46,16 @@ footer h4 {
     text-align: center;
     vertical-align: middle;
     font-family: Lobster, SansSerif;
-    font-weight:700;
+    font-weight: 700;
 }
 
 .text-vertical-center h1 {
     font-family: Lobster, SansSerif;
-    margin-bottom:40% !important;
-    margin-left:5%;
-    margin-right:5%;
+    margin-bottom: 40% !important;
+    margin-left: 5%;
+    margin-right: 5%;
     font-weight: 700;
-    font-size:3.3em;
+    font-size: 3.3em;
     margin: 0;
     padding: 0;
 }
@@ -75,7 +91,7 @@ footer h4 {
     -moz-border-radius: 12px;
     border-width: 4px;
     border-color: #be3235;
-    font-size:48px !important;
+    font-size: 48px !important;
 }
 
 .padded-body {
@@ -89,10 +105,10 @@ footer h4 {
 
 .light-stroked {
     text-shadow: 3px 3px 0 #000,
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 .dark-text {
@@ -114,11 +130,11 @@ hr.small {
 }
 
 hr.supersmall {
-    width:20px;
-    color:black;
-    background-color:black;
-    margin:5px auto 5px auto;
-    border:solid 1px;
+    width: 20px;
+    color: black;
+    background-color: black;
+    margin: 5px auto 5px auto;
+    border: solid 1px;
 }
 
 /* Side Menu */
@@ -170,17 +186,17 @@ hr.supersmall {
     text-decoration: none;
 }
 
-.sidebar-nav > .sidebar-brand {
+.sidebar-nav>.sidebar-brand {
     font-size: 18px;
     line-height: 55px;
     height: 55px;
 }
 
-.sidebar-nav > .sidebar-brand a {
+.sidebar-nav>.sidebar-brand a {
     color: #999;
 }
 
-.sidebar-nav > .sidebar-brand a:hover {
+.sidebar-nav>.sidebar-brand a:hover {
     color: #fff;
     background: none;
 }
@@ -220,7 +236,7 @@ hr.supersmall {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    overflow-x:hidden;
+    overflow-x: hidden;
 
 }
 
@@ -228,7 +244,7 @@ hr.supersmall {
 
 .about {
     padding: 50px 0;
-    font-size:1.2em;
+    font-size: 1.2em;
 }
 
 /* Services */
@@ -284,7 +300,7 @@ hr.supersmall {
 }
 
 /* Gallery */
-#slide-container{
+#slide-container {
     position: relative;
     display: table;
     width: 100%;
@@ -294,13 +310,16 @@ hr.supersmall {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    overflow-x:hidden;
+    overflow-x: hidden;
 
 }
-.mySlides {
-    display:block; margin-left: auto; margin-right: auto;
 
-    height:100%;
+.mySlides {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100%;
 }
 
 
@@ -308,8 +327,9 @@ hr.supersmall {
     .mySlides {
         height: 75%;
     }
-    #slide-container{
-        height:75%;
+
+    #slide-container {
+        height: 75%;
     }
 }
 
@@ -364,235 +384,274 @@ footer {
     color: #28a428;
     font-size: .9em;
 }
+
 .txt-faded {
     color: rgba(0, 0, 0, .7);
-    font-size:.8em;
+    font-size: .8em;
 }
 
-.disclaimer{
-    margin-left:3%;
-    font-size:1.5em;
+.disclaimer {
+    margin-left: 3%;
+    font-size: 1.5em;
 }
+
 .lobster {
     font-family: Lobster, SansSerif;
 }
+
 .services-txt {
     font-size: 2em !important;
 }
-@media only screen and (min-width: 320px) and (max-width: 400px)
-{
-    .text-vertical-center > h1 {
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+    .text-vertical-center>h1 {
         font-size: 55px !important;
         font-family: Lobster;
         font-weight: 700;
         margin: 0;
         padding: 0;
     }
-    .btn-book{
-        margin-top:65% !important;
+
+    .btn-book {
+        margin-top: 65% !important;
         font-family: Lobster, SansSerif;
-        font-size:88px;
+        font-size: 88px;
     }
+
     .list-group-item {
         height: 200px;
         min-height: 100px;
         min-width: 160px;
         overflow: hidden;
-        font-size:1.45em;
+        font-size: 1.45em;
         display: flex;
-        justify-content:center;
-        flex-direction:column;
-        text-align:center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
 
     }
+
     .sidebar-nav {
-        font-size:1.5em !important;
+        font-size: 1.5em !important;
     }
-    .sidebar-brand{
-        font-size:.9em !important;
+
+    .sidebar-brand {
+        font-size: .9em !important;
     }
-    #about{
-        font-size:1em !important;
+
+    #about {
+        font-size: 1em !important;
     }
-    footer{
-        font-size:1.1em;
+
+    footer {
+        font-size: 1.1em;
     }
-    .hiddenTable{
-        display:none;
+
+    .hiddenTable {
+        display: none;
     }
 
 }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 401px) and (max-width: 600px) {
-    .text-vertical-center > h1 {
+    .text-vertical-center>h1 {
         font-size: 55px !important;
         font-family: Lobster;
         font-weight: 700;
         margin: 0;
         padding: 0;
     }
-    .btn-book{
-        margin-top:35% !important;
+
+    .btn-book {
+        margin-top: 35% !important;
         font-family: Lobster, SansSerif;
-        font-size:88px;
+        font-size: 88px;
     }
+
     .list-group-item {
         height: 185px;
         min-height: 100px;
         min-width: 160px;
         overflow: hidden;
-        font-size:1.45em;
+        font-size: 1.45em;
         display: flex;
-        justify-content:center;
-        flex-direction:column;
-        text-align:center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
 
     }
+
     .sidebar-nav {
-        font-size:1.5em !important;
+        font-size: 1.5em !important;
     }
-    .sidebar-brand{
-        font-size:.9em !important;
+
+    .sidebar-brand {
+        font-size: .9em !important;
     }
-    #about{
-        font-size:1em !important;
+
+    #about {
+        font-size: 1em !important;
     }
-    .hiddenTable{
-        display:none;
+
+    .hiddenTable {
+        display: none;
     }
 }
+
 /* Extra small devices (phones, 600px to 768px) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
-    .text-vertical-center > h1 {
+    .text-vertical-center>h1 {
         font-size: 55px !important;
         font-family: Lobster;
         font-weight: 700;
         margin: 0;
         padding: 0;
     }
-    .btn-book{
-        margin-top:35% !important;
+
+    .btn-book {
+        margin-top: 35% !important;
         font-family: Lobster, SansSerif;
-        font-size:88px;
+        font-size: 88px;
     }
+
     .list-group-item {
         height: 185px;
         min-height: 100px;
         min-width: 160px;
         overflow: hidden;
-        font-size:1.5em;
+        font-size: 1.5em;
         display: flex;
-        justify-content:center;
-        flex-direction:column;
-        text-align:center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
 
     }
+
     .sidebar-nav {
-        font-size:1.5em !important;
+        font-size: 1.5em !important;
     }
-    .sidebar-brand{
-        font-size:.9em !important;
+
+    .sidebar-brand {
+        font-size: .9em !important;
     }
-    #about{
-        font-size:.95em !important;
+
+    #about {
+        font-size: .95em !important;
     }
-    .hiddenTable{
-        display:none;
+
+    .hiddenTable {
+        display: none;
     }
 }
+
 /* Medium devices (landscape tablets, 768px up to 992px) */
 @media only screen and (min-width: 768px) and (max-width:992px) {
-    .text-vertical-center > h1 {
+    .text-vertical-center>h1 {
         font-size: 75px !important;
         font-family: Lobster;
         font-weight: 700;
         margin: 0;
         padding: 0;
     }
-    .btn-book{
-        margin-top:50% !important;
+
+    .btn-book {
+        margin-top: 50% !important;
         font-family: Lobster, SansSerif;
-        font-size:75px !important;
+        font-size: 75px !important;
     }
+
     .list-group-item {
         height: 200px !important;
         min-height: 100px;
         min-width: 165px !important;
         overflow: hidden;
-        font-size:1.2em !important;
+        font-size: 1.2em !important;
         display: flex;
-        justify-content:center;
-        flex-direction:column;
-        text-align:center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
     }
+
     .row {
-        margin-left:-25px !important;
-        margin-right:-25px !important;
+        margin-left: -25px !important;
+        margin-right: -25px !important;
     }
+
     .sidebar-nav {
-      font-size:1.5em !important;
+        font-size: 1.5em !important;
     }
-    .sidebar-brand{
-        font-size:.9em !important;
+
+    .sidebar-brand {
+        font-size: .9em !important;
     }
-    footer{
-        font-size:1.4em !important;
+
+    footer {
+        font-size: 1.4em !important;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .text-vertical-center >h1 {
-        font-size:70px !important;
-        font-weight:700;
+    .text-vertical-center>h1 {
+        font-size: 70px !important;
+        font-weight: 700;
         font-family: Lobster, SansSerif;
     }
-    .btn-book{
-        margin-top:10% !important;
+
+    .btn-book {
+        margin-top: 10% !important;
         font-family: Lobster, SansSerif;
-        font-size:104px !important;
+        font-size: 104px !important;
     }
+
     .list-group-item {
         height: 250px !important;
         min-height: 100px;
         min-width: 200px;
         overflow: hidden;
-        font-size:1.3em !important;
+        font-size: 1.3em !important;
         display: flex;
-        justify-content:center;
-        flex-direction:column;
-        text-align:center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
     }
-    .row{
-        margin-left:-15px;
-        margin-right:-15px;
+
+    .row {
+        margin-left: -15px;
+        margin-right: -15px;
     }
-    footer{
-        font-size:1.3em;
+
+    footer {
+        font-size: 1.3em;
     }
-    #about{
-        font-size:1.5em;
+
+    #about {
+        font-size: 1.5em;
     }
+
     .sidebar-nav {
-        font-size:1.5em !important;
+        font-size: 1.5em !important;
     }
-    .sidebar-brand{
-        font-size:.9em !important;
+
+    .sidebar-brand {
+        font-size: .9em !important;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) and (max-width: 1800px) {
-    .text-vertical-center > h1 {
-        font-size:120px;
-        font-weight:700;
-        margin-bottom:0% !important;
+    .text-vertical-center>h1 {
+        font-size: 120px;
+        font-weight: 700;
+        margin-bottom: 0% !important;
         font-family: Lobster, SansSerif;
     }
+
     .btn-book {
-        margin-top:30% !important;
+        margin-top: 30% !important;
         font-family: Lobster, SansSerif;
-        font-size:104px !important;
+        font-size: 104px !important;
     }
 
     .list-group-item {
@@ -600,90 +659,102 @@ footer {
         min-height: 100px;
         min-width: 160px;
         overflow: hidden;
-        font-size:1.5em;
+        font-size: 1.5em;
         display: flex;
-        justify-content:center;
-        flex-direction:column;
-        text-align:center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
 
     }
-    .row{
-        margin-left:-75px;
-        margin-right:-75px;
+
+    .row {
+        margin-left: -75px;
+        margin-right: -75px;
     }
+
     .sidebar-nav {
-        font-size:1.5em !important;
-    }
-    .sidebar-brand{
-        font-size:.7em !important;
+        font-size: 1.5em !important;
     }
 
-    footer{
-        font-size:1.5em;
+    .sidebar-brand {
+        font-size: .7em !important;
     }
-    #about{
-        font-size:1.4em;
+
+    footer {
+        font-size: 1.5em;
+    }
+
+    #about {
+        font-size: 1.4em;
     }
 
 }
+
 @media only screen and (min-width: 1877px) {
-    .text-vertical-center > h1 {
-        font-size:150px;
-        font-weight:700;
-        margin-bottom:0% !important;
+    .text-vertical-center>h1 {
+        font-size: 150px;
+        font-weight: 700;
+        margin-bottom: 0% !important;
         font-family: Lobster, SansSerif;
     }
+
     .btn-book {
-        margin-top:30% !important;
+        margin-top: 30% !important;
         font-family: Lobster, SansSerif;
-        font-size:104px !important;
+        font-size: 104px !important;
     }
 
     .list-group-item {
-        margin-left:90px;
-        margin-right:70px;
+        margin-left: 90px;
+        margin-right: 70px;
         height: 210px;
         min-height: 100px;
         min-width: 200px;
 
         overflow: hidden;
-        font-size:1em;
+        font-size: 1em;
         display: flex;
-        justify-content:center;
-        flex-direction:column;
-        text-align:center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
 
     }
-    #services, h2{
-        font-size:1.7em ;
+
+    #services,
+    h2 {
+        font-size: 1.7em;
     }
 
-    .row{
-        margin-left:-250px !important;
-        margin-right:-250px !important;
+    .row {
+        margin-left: -250px !important;
+        margin-right: -250px !important;
     }
-    .sidebar-brand{
-        font-size:.7em !important;
+
+    .sidebar-brand {
+        font-size: .7em !important;
     }
 
     .sidebar-nav {
-        font-size:2em !important;
+        font-size: 2em !important;
     }
-    footer{
-        font-size:1.5em;
+
+    footer {
+        font-size: 1.5em;
     }
-    #about{
-        font-size:1.5em;
+
+    #about {
+        font-size: 1.5em;
     }
 }
+
 /*!* Main Services Box *!*/
 /*.list-group-item {*/
-    /*height: 150px;*/
-    /*min-height: 100px;*/
-    /*min-width: 160px;*/
-    /*overflow: hidden;*/
-    /*font-size:1.45em;*/
-    /*display: flex;*/
-    /*justify-content:center;*/
-    /*flex-direction:column;*/
-    /*text-align:center;*/
+/*height: 150px;*/
+/*min-height: 100px;*/
+/*min-width: 160px;*/
+/*overflow: hidden;*/
+/*font-size:1.45em;*/
+/*display: flex;*/
+/*justify-content:center;*/
+/*flex-direction:column;*/
+/*text-align:center;*/
